@@ -50,7 +50,7 @@
 		<h2>Gestion de Stock</h2>
 
 		<?php
-			$table = Produit::getTableName();	//nom de la table à consulterr
+			$table = Produit::getTableName();	//nom de la table à consulter
 			Sort::initOrderLog($table);		//initialiser les ordres
 			Sort::initCols($table);			//initialiser les colonnes
 			$error = false;				//flag d'erreur
