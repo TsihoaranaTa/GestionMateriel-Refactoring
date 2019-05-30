@@ -48,7 +48,7 @@
     	<div class="row d-flex justify-content-center">
 
 		<h2>Gestion de Stock</h2>
-		
+
 		<?php
 			$table = Produit::getTableName();	//nom de la table à consulter
 			Sort::initOrderLog($table);		//initialiser les ordres

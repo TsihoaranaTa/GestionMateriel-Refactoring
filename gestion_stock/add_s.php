@@ -1,6 +1,6 @@
 <?php
 	require_once '../include/include.php';
-    //Création d'un object Sortie
+    //Création d'un object Sortiee
     $dateSortie = $_POST['datefield'];
     $idProduit = $_POST['produit'];
     $quantite = $_POST['qte'];
@@ -16,7 +16,7 @@
 		$_SESSION['status'] = Application::$ERREUR_AJOUT;
     } else {
 		$_SESSION['status'] = Application::$SUCCES_AJOUT;
-        
+
 		Sortie::ajouter($s);
     	$_SESSION['SortieDateSortie'] = '';
     	$_SESSION['SortieIdProduit'] = '';
@@ -24,5 +24,5 @@
         $_SESSION['SortieBon'] = '';
     }
 	$_SESSION['message'] = $s->getMessage();
-	
+
     Application::redir('afficher_sortie.php?n=1');

@@ -7,9 +7,11 @@
 	//$_SESSION['ProduitQuantite'] = $quantite;
 	$_SESSION['ProduitReference'] = $designation;
 	$p = new Produit($designation, $reference, 0);	//la quantité du produit est par défaut 0, et est modifiée a travers les mouvements
-	if(!$p->estValide()) {
+	if(!$p->estValide())
+	{
 		$_SESSION['status'] = Application::$ERREUR_AJOUT;
-	} else {
+	} else
+	{
 		$_SESSION['status'] = Application::$SUCCES_AJOUT;
 		Produit::ajouter($p);
 		$_SESSION['ProduitDesignation'] = '';
