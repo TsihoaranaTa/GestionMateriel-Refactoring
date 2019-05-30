@@ -1,12 +1,13 @@
 <?php
 	$title = 'ajouterProduit';
 	require_once '../include/include.php';
-	if(!Utilisateur::utilisateurConnecte()):	//si l'utilisateur n'est pas connecté, on le renvoie vers l'interface de connexion
+	if(!Utilisateur::utilisateurConnecte()):
+		//si l'utilisateur n'est pas connecté, on le renvoie vers l'interface de connexion
 		Application::redir('../login/');
 	endif;
-	
+
 	$designation = (isset($_SESSION['ProduitDesignation']) && !empty($_SESSION['ProduitDesignation']))? $_SESSION['ProduitDesignation'] : '';
-	
+
 	$reference = (isset($_SESSION['ProduitReference']) && !empty($_SESSION['ProduitReference']))? $_SESSION['ProduitReference'] : '';
 	$message = (isset($_SESSION['message']) && !empty($_SESSION['message']))? $_SESSION['message']: '';
 ?>
@@ -48,24 +49,18 @@
     <div id="header">
     <div id="site_content">
 	<div id="content">
+
+<!--Formulaire d'ajout d'un produit -->
+
 	  <form method="post" action="add.php" class="login">
 	  		<fieldset>
 	  			<h2>Ajouter un nouveau produit</h2>
-	  			<div class="md-form ">
 
+	  			<div class="md-form ">
 	  				  <input type="text" name="designation" id="form1" class="form-control" required value="<?php echo $designation; ?>">
   					<label for="form1">Désignation</label>
-
-  
 	  			</div>
 
-	  			
-	  			<!--
-	  			<div>
-	  				<label for="quantite">Quantite:</label>
-	  				<input type="number" min="0" name="quantite" placeholder="Quantite du produit" required value="<?php //echo (isset($quantite))?$quantite:''; ?>"/><br />
-	  			</div>
-	  			-->
 	  			<div class="md-form ">
 	  				<input type="text" name="reference" id="form1" class="form-control" required ><?php echo (isset($reference))?$reference:''; ?>
 	  					<label for="form1">Référence</label><br />
@@ -77,7 +72,7 @@
 	  </form>
 	</div>
     </div>
-   
+
     <p>&nbsp;</p>
   </div>
   </div>

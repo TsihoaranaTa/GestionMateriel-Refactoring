@@ -4,6 +4,36 @@
 	$page_accueil = (Utilisateur::getUtilisateurConnecte()->estAdmin())? 'admin3.php': 'autre.php';
 ?>
 
+<!--<div
+	<ul>
+
+	<li><a href='<?php echo $page_accueil; ?>'><span>Accueil</span> </a></li>
+		<li class='has-sub'><a href='gestion_etats/'><span>Status</span> </a>
+			<ul>
+				<li><a href='../Application/gestion_etats/ajouter_etat.php'><span>Ajouter</span>
+				</a></li>
+				<li><a href='../gestion_etats/rechercher_etat.php'><span>Rechercher</span>
+				</a></li>
+				<li class='last'><a href='../gestion_etats/afficher_etat.php?n=1'><span>Afficher (<?php echo Etat::nb(); ?>)</span> </a></li>
+			</ul>
+		</li>
+		<li class='has-sub'><a href='gestion_interventions/'><span>Intervention</span>
+		</a>
+			<ul>
+				<li><a href='../Application/gestion_interventions/ajouter_intervention.php'><span>Ajouter</span>
+				</a></li>
+				<li><a href='../Application/gestion_interventions/recherher_intervention.php'><span>Rechercher</span>
+				</a></li>
+				<li class='last'><a
+					href='../gestion_interventions/afficher_intervention.php'><span>Afficher</span> </a></li>
+			</ul>
+		</li>
+			</ul>
+		</li>
+	</ul>
+</div>-->
+//stop here
+
 
 
  <nav class="mb-1 navbar fixed-top navbar-expand-lg navbar-dark secondary-color">
