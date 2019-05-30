@@ -1,0 +1,41 @@
+.contcustom{
+	margin-top: 80px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.no-gutters {
+margin-right: 0;
+margin-left: 0;
+
+> .col,
+> [class*="col-"] {
+padding-right: 0;
+padding-left: 0;
+}
+}
+.main{
+	width: 560px;
+}
+.posre{
+	position: relative;
+	bottom: 9px;
+}
+.container-md{
+
+}
+.mainam{
+	width: 1000px;
+}
+.login-back{
+	background-image: url("../images/wall.jpg");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+body, html {
+  height: 100%;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<gadgets>
+<gadget>
+<id>8</id>
+<nom>souris s.</nom>
+</gadget>
+<gadget>
+<id>7</id>
+<nom>souris f.</nom>
+</gadget>
+<gadget>
+<id>6</id>
+<nom>RAM</nom>
+</gadget>
+<gadget>
+<id>5</id>
+<nom>Disque dur</nom>
+</gadget>
+</gadgets>
